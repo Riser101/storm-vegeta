@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <style>
+	table, th , td  {
+	  border: 1px solid grey;
+	  border-collapse: collapse;
+	  padding: 5px;
+	}
+	table tr:nth-child(odd)	{
+	  background-color: #f1f1f1;
+	}
+	table tr:nth-child(even) {
+	  background-color: #ffffff;
+	}
+  </style>
+
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+   <script src="/js/controllers/main.js"></script>
+  </head>
+  <!-- 3. Display the application -->
+  <body ng-app="myModule">
+  	  <div ng-controller="myController">
+  	  	<table>
+  	  		<tr>
+  	  			<th>PRODUCT NAME</th>
+  	  		</tr>
+  	  		<tr ng-repeat="product in response">
+  	  			<td>{{product.product}}</td>
+  	  		</tr>
+  	  	</table>
+  	  </div>
+  </body>
+</html>	

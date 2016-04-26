@@ -1,0 +1,7 @@
+{
+    "expressPort": 3000,
+    "secret": "mysecret",
+    "mongoDb": {
+        "ccDb": "mongodb://localhost:27017/ccDb"
+    }
+}
